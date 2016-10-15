@@ -7,38 +7,36 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace lab2
-{
-
-
-    public partial class WebForm1
-    {
-
+namespace lab2 {
+    
+    
+    public partial class department_details {
+        
         /// <summary>
-        /// lblMessage control.
+        /// txtName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMessage;
-
+        protected global::System.Web.UI.WebControls.TextBox txtName;
+        
         /// <summary>
-        /// txtname control.
+        /// txtBudget control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtname;
-
+        protected global::System.Web.UI.WebControls.TextBox txtBudget;
+        
         /// <summary>
-        /// btnsubmit control.
+        /// btnSave control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnsubmit;
+        protected global::System.Web.UI.WebControls.Button btnSave;
     }
 }
