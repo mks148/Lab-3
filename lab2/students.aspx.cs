@@ -14,6 +14,22 @@ namespace lab2
             getStudents();
         }
 
+
+        protected void grdStudentsdeleting(object sender, GridViewDeleteEventArgs e)
+        {
+
+            Int32 gridIndex = e.RowIndex;
+            Int32 StudentID = Convert.ToInt32(grdStudents.DataKeys[gridIndex].Value);
+            var conn = new ContosoEntities1();
+            Student s = new Student();
+            s.StudentID = StudentID;
+            conn.Students.Attach(s);
+            conn.Students.Remove(s);
+            conn.SaveChanges();
+
+            getStudents();
+
+        }
         protected void getStudents()
         {
            
