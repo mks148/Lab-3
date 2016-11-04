@@ -31,7 +31,7 @@ namespace lab2
 
                     txtLast.Text = objStu.LastName;
                     txtFirst.Text = objStu.FirstMidName;
-                    txtEnrollment.Text = objStu.EnrollmentDate.ToShortTimeString();
+                    txtEnrollment.Text = objStu.EnrollmentDate.ToString("yyyy-MM-dd");
                     
                 }
 
@@ -59,6 +59,7 @@ namespace lab2
             stu.LastName = txtLast.Text;
             stu.FirstMidName= txtFirst.Text;
             stu.EnrollmentDate= Convert.ToDateTime(txtEnrollment.Text);
+           
 
             if (StudentID == 0)
             {
